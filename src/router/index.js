@@ -1,5 +1,5 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
-import Recommod from '../views/recommod.vue'
+import recommend from '../views/recommend.vue'
 import Singer from '../views/singer.vue'
 import Search from '../views/search.vue'
 import TopList from '../views/top-list.vue'
@@ -7,11 +7,11 @@ import TopList from '../views/top-list.vue'
 const routes = [
   {
     path: '/',
-    redirect: '/recommod'
+    redirect: '/recommend'
   },
   {
-    path: '/recommod',
-    component: Recommod
+    path: '/recommend',
+    component: recommend
   },
   {
     path: '/singer',

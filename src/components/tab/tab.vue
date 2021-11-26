@@ -13,7 +13,7 @@ export default {
             tabs: [
                 {
                     name: '推荐',
-                    path: '/recommod'
+                    path: '/recommend'
                 },
                  {
                     name: '歌手',
