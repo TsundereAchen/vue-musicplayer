@@ -6,12 +6,20 @@ const loadingDirective = {
         const app = createApp(loading)
         const instance = app.mount(document.createElement('div'))
         el.instance = instance
+        const title = binding.arg
+        if (typeof title !== 'undefined') {
+            instance.setTitle(title)
+        }
         // 如果指令为true
         if (binding.value) {
             append(el)
         }
     },
     updated(el, binding) {
+        const title = binding.arg
+        if (typeof title !== 'undefined') {
+            el.instance.setTitle(title)
+          }
         // 组件更新后，判断值是否改变
         if (binding.value !== binding.oldValue) {
             binding.value ? append(el) : remove(el)

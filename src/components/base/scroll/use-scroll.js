@@ -12,6 +12,7 @@ export default function useScroll (wrapperRef, options, emit) {
             ...options
         })
 
+        // probeType： 0不派发scroll事件 1手指滑动派发scroll事件 2滑动派发事件
         if (options.probeType > 0) {
             scrollVal.on('scroll', (pos) => {
                 emit('scroll', pos)

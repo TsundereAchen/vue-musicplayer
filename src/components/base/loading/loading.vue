@@ -11,10 +11,7 @@
 export default {
     data() {
         return {
-            title: {
-                type: String,
-                default: ''
-            }
+            title: '加载中...'
         }
     },
     methods: {

@@ -14,6 +14,7 @@ export default {
             default: 0
         }
     },
+    // 定义自定义事件
     emits: ['scroll'],
     setup(props, { emits }) {
         const rootRef = ref(null)
